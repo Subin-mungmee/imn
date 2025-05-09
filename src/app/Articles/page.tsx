@@ -98,9 +98,14 @@ const BlogPage: React.FC = () => {
                             </p>
                             <div className={styles.grid}>
                                 {mockArticles
-                                    .sort((a, b) =>
-                                        new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
-                                    )
+                                    .sort((a, b) => {
+                                        const dateA = new Date(b.publishDate).getTime();
+                                        const dateB = new Date(a.publishDate).getTime();
+                                        if (dateA === dateB) {
+                                            return b.id - a.id; // ถ้าวันเหมือนกัน เรียงตาม id มากก่อน
+                                        }
+                                        return dateA - dateB;
+                                    })
                                     .map((article) => (
                                         <div key={article.id} className={styles.card}>
                                             <Image
@@ -120,6 +125,7 @@ const BlogPage: React.FC = () => {
                                         </div>
                                     ))}
                             </div>
+
                         </div>
                     </Container>
                     <Newletter />
