@@ -77,6 +77,27 @@ const BlogPage: React.FC = () => {
             slug: "Update-marketing-2025",
             publishDate: "2025-05-05",
         },
+        {
+            id: 5,
+            title: "ธุรกิจสายมู มาแรง",
+            summary: "โอกาสทองในยุคที่ความเชื่อคือพลังแห่งการตลาด...",
+            imageUrl: "/Img/contant-5.jpg",
+            slug: "Mu-Sai-Business",
+        },
+        {
+            id: 6,
+            title: "ทิศทาง ฮวงจุ้ย 2025",
+            summary: "เสริมพลังชีวิต เสริมโชคลาภปี 2025...",
+            imageUrl: "/Img/contant-6.jpg",
+            slug: "Feng-Shui-Direction-2025",
+        },
+        {
+            id: 7,
+            title: "อัพเดทการตลาดเทรนใหม่ 2025",
+            summary: "ใครปรับก่อน รอดก่อน โลกของการตลาดในปี 2025...",
+            imageUrl: "/Img/contant-7.jpg",
+            slug: "Update-marketing-2025",
+        },
     ]
 
     return (
