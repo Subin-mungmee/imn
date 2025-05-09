@@ -15,7 +15,7 @@ import LogoPic from "@/components/Img/logo-infinity.png"
 const BlogPage: React.FC = () => {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        const img = new window.Image(); // ✅ ใช้ window.Image เพื่อหลีกเลี่ยง conflict
+        const img = new window.Image();
         img.src = LogoPic.src;
         img.onload = () => setTimeout(() => setLoading(false), 300);
     }, []);
@@ -27,6 +27,7 @@ const BlogPage: React.FC = () => {
             summary: "เรียนรู้เทคนิค TikTok ยังไงให้ไวรัล ปี 2025...",
             imageUrl: "/Img/contant-2.jpg",
             slug: "tiktok-viral-2025",
+            publishDate: "2025-05-01",
         },
         {
             id: 2,
@@ -34,6 +35,7 @@ const BlogPage: React.FC = () => {
             summary: "Search Intent เกี่ยวข้องกับการวิเคราะห์หา Keyword...",
             imageUrl: "/Img/contant-1.jpg",
             slug: "Search-Intent-SEO",
+            publishDate: "2025-04-28",
         },
         {
             id: 3,
@@ -41,6 +43,7 @@ const BlogPage: React.FC = () => {
             summary: "ระบบเว็บไซต์สำเร็จรูป คือระบบเว็บไซต์ที่มีระบบสร้าง Template...",
             imageUrl: "/Img/contant-2.jpg",
             slug: "About-Wordpress",
+            publishDate: "2025-04-15",
         },
         {
             id: 4,
@@ -48,6 +51,31 @@ const BlogPage: React.FC = () => {
             summary: "โฆษณา PPC (Pay-Per-Click) ไม่ใช่เรื่องใหม่ในปี 2025...",
             imageUrl: "/Img/contant-3.jpg",
             slug: "PPC-2025",
+            publishDate: "2025-04-20",
+        },
+        {
+            id: 5,
+            title: "ธุรกิจสายมู มาแรง",
+            summary: "โอกาสทองในยุคที่ความเชื่อคือพลังแห่งการตลาด...",
+            imageUrl: "/Img/contant-5.jpg",
+            slug: "Mu-Sai-Business",
+            publishDate: "2025-04-30",
+        },
+        {
+            id: 6,
+            title: "ทิศทาง ฮวงจุ้ย 2025",
+            summary: "เสริมพลังชีวิต เสริมโชคลาภปี 2025...",
+            imageUrl: "/Img/contant-6.jpg",
+            slug: "Feng-Shui-Direction-2025",
+            publishDate: "2025-05-03",
+        },
+        {
+            id: 7,
+            title: "อัพเดทการตลาดเทรนใหม่ 2025",
+            summary: "ใครปรับก่อน รอดก่อน โลกของการตลาดในปี 2025...",
+            imageUrl: "/Img/contant-7.jpg",
+            slug: "Update-marketing-2025",
+            publishDate: "2025-05-05",
         },
     ]
 
@@ -69,24 +97,28 @@ const BlogPage: React.FC = () => {
                                 รวมเนื้อหาอัปเดตใหม่ ที่จะช่วยให้คุณเก่งขึ้นทุกวัน
                             </p>
                             <div className={styles.grid}>
-                                {mockArticles.map((article) => (
-                                    <div key={article.id} className={styles.card}>
-                                        <Image
-                                            src={article.imageUrl}
-                                            alt={article.title}
-                                            width={400}
-                                            height={220}
-                                            className={styles.image}
-                                        />
-                                        <div className={styles.cardContent}>
-                                            <h2>{article.title}</h2>
-                                            <p>{article.summary}</p>
-                                            <Link href={`/Articles/${article.slug}`} className={styles.readMore}>
-                                                อ่านต่อ →
-                                            </Link>
+                                {mockArticles
+                                    .sort((a, b) =>
+                                        new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+                                    )
+                                    .map((article) => (
+                                        <div key={article.id} className={styles.card}>
+                                            <Image
+                                                src={article.imageUrl}
+                                                alt={article.title}
+                                                width={400}
+                                                height={220}
+                                                className={styles.image}
+                                            />
+                                            <div className={styles.cardContent}>
+                                                <h2>{article.title}</h2>
+                                                <p>{article.summary}</p>
+                                                <Link href={`/Articles/${article.slug}`} className={styles.readMore}>
+                                                    อ่านต่อ →
+                                                </Link>
+                                            </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
                             </div>
                         </div>
                     </Container>
@@ -98,4 +130,4 @@ const BlogPage: React.FC = () => {
     )
 }
 
-export default BlogPage
+export default BlogPage;
