@@ -6,7 +6,6 @@ import styles from "./page.module.css";
 import HeaderNavbar from "@/components/Menu/indexnavbar";
 import Footer from "@/components/Footer";
 import Newletter from "@/components/Newsletter";
-
 import BounceLoader from "react-spinners/SyncLoader"
 import Image from "next/image"
 import Link from "next/link"
