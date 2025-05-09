@@ -59,7 +59,7 @@ const BlogPage: React.FC = () => {
             summary: "โอกาสทองในยุคที่ความเชื่อคือพลังแห่งการตลาด...",
             imageUrl: "/Img/contant-5.jpg",
             slug: "Mu-Sai-Business",
-            publishDate: "2025-04-30",
+            publishDate: "2025-05-05",
         },
         {
             id: 6,
@@ -67,7 +67,7 @@ const BlogPage: React.FC = () => {
             summary: "เสริมพลังชีวิต เสริมโชคลาภปี 2025...",
             imageUrl: "/Img/contant-6.jpg",
             slug: "Feng-Shui-Direction-2025",
-            publishDate: "2025-05-03",
+            publishDate: "22025-05-05",
         },
         {
             id: 7,
