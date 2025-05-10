@@ -445,17 +445,15 @@ const ArticleDetailPage = () => {
         <>
             <HeaderNavbar />
             <Container className="py-5">
-                <h1 className="d-flex justify-content-center">{article.title}</h1>
-                <div className="d-flex justify-content-center">
-                    <Image
-                        src={article.imageUrl}
-                        alt={article.title}
-                        width={850}
-                        height={500}
-                        style={{ borderRadius: "12px", marginBottom: "1.5rem" }}
-                    />
-                </div>
-                <div style={{ whiteSpace: "pre-wrap", fontSize: "1.5rem", lineHeight: "1.8" }}>
+                <h1 className="mb-4">{article.title}</h1>
+                <Image
+                    src={article.imageUrl}
+                    alt={article.title}
+                    width={800}
+                    height={450}
+                    className="img-fluid mb-4 rounded"
+                />
+                <div style={{ whiteSpace: "pre-line" }}>
                     {article.content}
                 </div>
             </Container>
