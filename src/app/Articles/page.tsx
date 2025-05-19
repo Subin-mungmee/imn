@@ -76,6 +76,14 @@ const BlogPage: React.FC = () => {
             slug: "Update-marketing-2025",
             publishDate: "2025-05-05",
         },
+              {
+            id: 8,
+            title: "เทรนด์อาชีพมาแรง ยุค Digital",
+            summary: "เทรนด์อาชีพมาแรง ยุค Digital ที่คุณไม่ควรมองข้าม...",
+            imageUrl: "/Img/contant-8.jpg",
+            slug: "Hot-career-trends-in-the-digital-age",
+            publishDate: "2025-05-19",
+        },
     ]
 
     return (
