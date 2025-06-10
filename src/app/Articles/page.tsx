@@ -92,6 +92,14 @@ const BlogPage: React.FC = () => {
             slug: "Marketing-Mix-Models",
             publishDate: "2025-05-22",
         },
+            {
+            id: 10,
+            title: "ตลาดสายมู (Muketing) ยุค AI",
+            summary: "เมื่อศาสตร์แห่งความเชื่อผสานเทคโนโลยีอัจฉริยะ...",
+            imageUrl: "/Img/contant-10.jpg",
+            slug: "Marketing-AI",
+            publishDate: "2025-06-11",
+        },
     ]
 
     return (
