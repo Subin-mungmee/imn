@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
                 }}
               >
                 <motion.h1
-                  style={{ textAlign: 'center', color:'#f0c670' }}
+                  style={{ textAlign: 'center', color: '#f0c670' }}
                   className="fw-bold mb-4"
                   variants={fadeInUp}
                   custom={0}
@@ -51,16 +51,16 @@ const HeroSection: React.FC = () => {
 
                 <motion.div variants={fadeInUp} custom={1}>
                   <p style={{ fontSize: '23px' }}>
-                    ทำบุญออนไลน์ ดูดวงออนไลน์ เลขเด็ด เลขมงคลออนไลน์ <br />
-                    หรือ รับจัดฮวงจุ้ย ดูดวงออนไลน์ ทัวร์ไหว้พระ<br />
-                    ในประเทศและต่างประเทศ
+                    ทำบุญ-เสริมดวงออนไลน์ ดูดวงออนไลน์ วัตถุมงคล<br />
+                    เลขมงคล เบอร์มงคล ฮวงจุ้ย ทัวร์ไหว้พระในประเทศ<br />
+                    และต่างประเทศ รวมถึง Muketing (ตลาดสายมู)
                   </p>
                 </motion.div>
 
                 <motion.div variants={fadeInUp} custom={2}>
                   <p style={{ fontSize: '20px' }}>
-                    เรามีความมุ่งมั่น ใส่ไอเดียเข้าไปในงาน<br />
-                    เพื่อเป็นผู้นำด้านการตลาดสายมู
+                    เรามีความมุ่งมั่น เชี่ยวชาญ ใส่ไอเดีย ครีเอทีฟ ความเชื่อ<br />
+                    เข้าไปในเนื้องาน เพื่อเป็นผู้นำด้านการตลาดสายมู MUKETING
                   </p>
                 </motion.div>
 
@@ -77,7 +77,7 @@ const HeroSection: React.FC = () => {
                       fontSize: '25px',
                       textTransform: 'capitalize',
                       fontStyle: 'italic',
-                      color:'#f0c670'
+                      color: '#f0c670'
                     }}
                   >
                     เรามีการตลาดที่เพิ่มมูลค่า ใน “สายมู”<br />
@@ -132,7 +132,7 @@ const HeroSection: React.FC = () => {
             <Col md={6} className="text-center mt-4 mt-md-0">
               <div style={{ position: 'relative', display: 'inline-block', width: '100%' }}>
                 <motion.img
-                  src= {Bannerlady.src}
+                  src={Bannerlady.src}
                   alt="สายมูเตลู"
                   className="img-fluid"
                   animate={{ y: [0, -15, 0, 15, 0] }}
@@ -151,7 +151,7 @@ const HeroSection: React.FC = () => {
                   </motion.a>
 
                   <motion.a
-                    href="https://facebook.com/"
+                    href="https://www.facebook.com/8InfinityMarketingTeam"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.icon}
@@ -162,7 +162,7 @@ const HeroSection: React.FC = () => {
                   </motion.a>
 
                   <motion.a
-                    href="https://line.me/"
+                    href="https://line.me/R/ti/p/@imn.th"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.icon}
