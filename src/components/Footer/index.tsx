@@ -11,8 +11,7 @@ import {
 } from "react-icons/fa";
 import logo from "../Img/logo-infinity.png"; // ปรับ path ตามโปรเจกต์ของคุณ
 import "./style.css";
-import Link from 'next/link';
-
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -30,7 +29,7 @@ const Footer = () => {
               />
               <p>
                 <FaMapMarkerAlt className="me-2" />
-                48/65 หมู่บ้านพรีเมี่ยมเพลส ซอยสุคนธสวัสดิ์ 38 
+                48/65 หมู่บ้านพรีเมี่ยมเพลส ซอยสุคนธสวัสดิ์ 38
                 <br />
                 ถนนรามอินทรา-เอกมัย แขวงลาดพร้าว เขตลาดพร้าว กรุงเทพมหานคร 10230
               </p>
@@ -79,11 +78,26 @@ const Footer = () => {
                   <Link href="#">กลยุทธ์มูเตลู</Link>
                 </li>
                 <li>
-                  <Link href="#">ตัวอย่างเด็ด</Link>
+                  <Link href="/Articles/Mu-Sai-Business">
+                    ธุรกิจสายมู มาแรง
+                  </Link>
                 </li>
                 <li>
-                  <Link href="#">ข้อควรระวัง</Link>
+                  <Link href="Articles/Feng-Shui-Direction-2025">
+                    ทิศทาง ฮวงจุ้ย 2025
+                  </Link>
                 </li>
+                <li>
+                  <Link href="/Articles/Update-marketing-2025">
+                    อัพเดทการตลาดเทรนใหม่ 2025
+                  </Link>
+                </li>
+                   <li>
+                  <Link href="/Articles/Marketing-Mix-Models">
+                    Marketing Mix Models (MMM) คืออะไร?
+                  </Link>
+                </li>
+                
               </ul>
             </Col>
 
@@ -91,10 +105,18 @@ const Footer = () => {
             <Col md={3} className="text-center text-md-start">
               <h6 className="fw-bold">ติดตามเรา</h6>
               <div className="d-flex justify-content-center justify-content-md-start gap-3 mt-2">
-                <a href="https://www.facebook.com/8InfinityMarketingTeam" target="_blank" className="social-icon-sm">
+                <a
+                  href="https://www.facebook.com/8InfinityMarketingTeam"
+                  target="_blank"
+                  className="social-icon-sm"
+                >
                   <FaFacebookF size={18} />
                 </a>
-                <a href="mailto:imn.th@hotmail.com" target="_blank" className="social-icon-sm">
+                <a
+                  href="mailto:imn.th@hotmail.com"
+                  target="_blank"
+                  className="social-icon-sm"
+                >
                   <FaEnvelope size={18} />
                 </a>
                 <a href="#" target="_blank" className="social-icon-sm">
@@ -113,10 +135,7 @@ const Footer = () => {
         style={{ backgroundColor: "#05143f" }}
       >
         © 2025 Copyright:{" "}
-        <a
-          href="https://imn.co.th"
-          className="text-white text-decoration-none"
-        >
+        <a href="https://imn.co.th" className="text-white text-decoration-none">
           INFINITY MARKETING NETWORK
         </a>
       </div>
