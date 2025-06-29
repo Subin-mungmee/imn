@@ -24,8 +24,8 @@ const services = [
         icon: Icondong3.src,
     },
     {
-        title: 'เลขเด็ด เลขมงคล',
-        subtitle: 'ดวงจุ้ย / มูรีพอร์ตการตลาด',
+        title: 'เลขนำโชค',
+        subtitle: 'เลขมงคล เบอร์มงคล',
         icon: Icondong4.src,
     },
 ];
