@@ -17,6 +17,7 @@ import Newletter from '@/components/Newsletter'
 import Footer from '@/components/Footer'
 import LogoPic from '@/components/Img/logo-infinity.png'
 import ServiceGrid from '@/components/ServiceGrid/page'
+import ServiceGrid2 from '@/components/ServiceGrid2/page'
 
 export default function HomeClient() {
   const [loading, setLoading] = useState(true)
@@ -45,6 +46,7 @@ export default function HomeClient() {
             <IconMarket />
             <Content1 />
             <MarketingServices />
+            <ServiceGrid2 />
             <Content3 />
             <Content4 />
             <STPMarketing />

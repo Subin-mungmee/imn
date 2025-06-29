@@ -1,0 +1,86 @@
+/* พื้นหลังสายมูหรู */
+.bgMu {
+  background-image: repeating-linear-gradient(#01a2ca) ;
+  color: #f7c948;
+}
+
+/* หัวข้อหลัก */
+.muHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.detailHeading {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+/* การ์ดแนวนอน */
+.muCard {
+  display: flex;
+  align-items: stretch; /* ✨ ทำให้รูปยืดตามความสูงการ์ด */
+  background: #ffffff;
+  border-radius: 1.25rem;
+  overflow: hidden; /* ✨ รูปไม่ล้น */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #f7c948;
+  transition: all 0.3s ease;
+  min-height: 160px;
+}
+
+.muCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(247, 201, 72, 0.3);
+}
+
+/* รูปไอคอน */
+.muIcon {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0; /* ✨ ไม่ต้องมนเพราะเราครอปเต็ม */
+}
+
+/* ข้อความ */
+.muContent {
+  flex: 1;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.muSubtext {
+  font-family: 'Prompt', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 768px) {
+  .muCard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .muIcon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .muContent {
+    padding: 1rem;
+  }
+}
