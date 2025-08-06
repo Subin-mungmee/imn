@@ -100,6 +100,14 @@ const BlogPage: React.FC = () => {
             slug: "Marketing-AI",
             publishDate: "2025-06-11",
         },
+                    {
+            id: 11,
+            title: "การใช้สีมงคล และตัวเลขเสริมโชคในแบรนด์ดิ้ง",
+            summary: "เสริมพลังความเชื่อให้แบรนด์อย่างมีกลยุทธ์...",
+            imageUrl: "/Img/contant-11.jpg",
+            slug: "Color-Branding",
+            publishDate: "2025-08-06",
+        },
     ]
 
     return (
