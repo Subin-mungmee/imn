@@ -108,6 +108,15 @@ const BlogPage: React.FC = () => {
             slug: "Color-Branding",
             publishDate: "2025-08-06",
         },
+                            {
+            id: 12,
+            title: "กลยุทธ์เพิ่มมูลค่าลูกค้าให้ธุรกิจ",
+            summary: "CLV มูลค่าตลอดอายุของลูกค้า คือ...",
+            imageUrl: "/Img/contant-12.jpg",
+            slug: "CLV",
+            publishDate: "2025-08-27",
+        },
+        
     ]
 
     return (
