@@ -116,6 +116,15 @@ const BlogPage: React.FC = () => {
             slug: "CLV",
             publishDate: "2025-08-27",
         },
+                                    {
+            id: 13,
+            title: "เทรนด์การตลาดสายมูที่เข้าถึงผู้บริโภคไทย",
+            summary: "คนไทยกับ “ความเชื่อเรื่องมู” เป็นของคู่กัน...",
+            imageUrl: "/Img/contant-13.jpg",
+            slug: "Muketing",
+            publishDate: "2025-10-01",
+        },
+        
         
     ]
 
