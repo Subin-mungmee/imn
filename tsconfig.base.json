@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@Img/*": ["src/img/*"],
-      "@utils/*": ["src/utils/*"]
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@Img/*": ["./src/img/*"],
+      "@utils/*": ["./src/utils/*"]
     },
+
     "strict": true,
     "target": "ES2020",
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,

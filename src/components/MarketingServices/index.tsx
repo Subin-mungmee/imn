@@ -16,35 +16,36 @@ interface Service {
     icon: string;
 }
 
+// ปรับปรุงบริการให้เป็นกลุ่ม "Muketing" และความเชื่อออนไลน์
 const services: Service[] = [
     {
-        title: "Customer Persona Insight",
-        description: "ข้อมูลเชิงลึกของกลุ่มเป้าหมายเพื่อวิเคราะห์การตลาดอย่างมีประสิทธิภาพ",
+        title: "Muketing Strategy & Insight",
+        description: "เจาะลึกพฤติกรรมผู้บริโภคสายมู วิเคราะห์ข้อมูลเพื่อวางแผนกลยุทธ์การตลาดสายมูอย่างมีประสิทธิภาพ",
         icon: IconPersona.src,
     },
     {
-        title: "Content Marketing",
-        description: "สร้างคอนเทนต์ที่เหมาะสมเพื่อดึงดูดและสร้างความสัมพันธ์กับลูกค้า",
+        title: "Creative Content & Beliefs",
+        description: "สร้างสรรค์คอนเทนต์ดึงดูดใจ ใส่ไอเดียความเชื่อ เช่น สีมงคล เลขอสังหาฯ และฤกษ์มงคล เพื่อเพิ่มยอดขาย",
         icon: IconContent.src,
     },
     {
-        title: "SEO Marketing",
-        description: "ปรับแต่งเว็บไซต์ให้ติดอันดับการค้นหาบน Google เพื่อเพิ่มการมองเห็น",
+        title: "Lucky Number & Fortune Marketing",
+        description: "ทำการตลาดและวิเคราะห์ศาสตร์ตัวเลข เบอร์มงคล เลขป้ายทะเบียนมงคล และศาสตร์ฮวงจุ้ยเพื่อธุรกิจ",
         icon: IconSEO.src,
     },
     {
-        title: "SEM Marketing",
-        description: "โฆษณาแบบจ่ายต่อคลิกเพื่อเพิ่มทราฟฟิกและยอดขายอย่างรวดเร็ว",
+        title: "Amulet & Online Merits (SEM)",
+        description: "โปรโมตและยิงโฆษณาออนไลน์สำหรับธุรกิจวัตถุมงคล ทำบุญออนไลน์ ดูดวงออนไลน์ ให้เข้าถึงกลุ่มเป้าหมายได้ทันที",
         icon: IconSEM.src,
     },
     {
-        title: "Social Media Marketing",
-        description: "ทำการตลาดผ่าน Social Media เพื่อสร้างการรับรู้และความผูกพันกับกลุ่มเป้าหมาย",
+        title: "Spiritual Tourism Marketing",
+        description: "ทำการตลาดและสร้างการรับรู้ผ่าน Social Media สำหรับธุรกิจทัวร์ไหว้พระ เสริมดวง ทั้งในและต่างประเทศ",
         icon: IconSocial.src,
     },
     {
-        title: "Data-Driven Marketing",
-        description: "ใช้ข้อมูลเพื่อวิเคราะห์และวางแผนกลยุทธ์การตลาดให้ตรงกลุ่มเป้าหมาย",
+        title: "Data-Driven Muketing Campaign",
+        description: "ใช้ข้อมูลวิเคราะห์เทรนด์ความนิยมปัจจุบัน เช่น สีรถมงคล ฤกษ์ออกรถ เพื่อนำมาดีไซน์แคมเปญให้ปังและตรงกลุ่ม",
         icon: IconData.src,
     },
 ];
@@ -53,8 +54,18 @@ const Content2: React.FC = () => {
     return (
         <div className="marketing-section">
             <Container>
-                <div className="banner-wrapper">
-                    <img src={PicBanner.src} alt="ทีมงานของเรา" className="team-image" />
+                {/* ส่วนหัวข้อแนะนำองค์กร (เพิ่มข้อความตามบรีฟ) */}
+                <div className="muketing-intro text-center mb-5" style={{ color: '#fff' }}> 
+                    <h2 className="fw-bold mb-3">ผู้นำด้านการตลาดสายมู MUKETING</h2>
+                    <p className="lead mx-auto" style={{ maxWidth: '800px' }}>
+                        เรามีความมุ่งมั่น เชี่ยวชาญ พร้อมใส่ไอเดียครีเอทีฟและพลังแห่งความเชื่อเข้าไปในเนื้องาน 
+                        ด้วยประสบการณ์ทำการตลาดธุรกิจทำบุญ-เสริมดวงออนไลน์ ดูดวง วัตถุมงคล เลขมงคล เบอร์มงคล ฮวงจุ้ย 
+                        รวมถึงทัวร์ไหว้พระทั้งในและต่างประเทศ เพื่อขับเคลื่อนธุรกิจของคุณให้เติบโตอย่างยั่งยืน
+                    </p>
+                </div>
+
+                <div className="banner-wrapper mb-5">
+                    <img src={PicBanner.src} alt="ทีมงาน Muketing ของเรา" className="team-image" />
                 </div>
 
                 <Row className="g-4" style={{textAlign:'left'}}>
@@ -68,10 +79,10 @@ const Content2: React.FC = () => {
                                         className="marketing-icon"
                                     />
                                     <div>
-                                        <Card.Title className="marketing-title">
+                                        <Card.Title className="marketing-title fw-bold">
                                             {service.title}
                                         </Card.Title>
-                                        <Card.Text className="marketing-description">
+                                        <Card.Text className="marketing-description text-muted">
                                             {service.description}
                                         </Card.Text>
                                     </div>
